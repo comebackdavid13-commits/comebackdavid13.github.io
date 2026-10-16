@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FlyX Strats - Guide</title>
+<style>
+:root{
+  --bg:#08080a; --panel:#111114; --line:#222228;
+  --text:#d9d9de; --muted:#8b8b95; --accent:#8fb4c9; --warn:#c9a46a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.7 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:64px 22px 90px}
+h1,h2{font-family:Bahnschrift,"Segoe UI Semibold","Segoe UI",system-ui,sans-serif;font-weight:600;letter-spacing:-.01em}
+h1{font-size:2.4rem;line-height:1.1;margin:0 0 12px}
+h2{font-size:1.5rem;margin:64px 0 4px}
+p{margin:0 0 12px;color:var(--muted)}
+.sub{max-width:52ch;font-size:1.05rem}
+
+ol{list-style:none;margin:22px 0 0;padding:0;counter-reset:s}
+ol li{counter-increment:s;position:relative;padding:0 0 26px 38px;border-left:1px solid var(--line);margin-left:9px}
+ol li:last-child{border-left-color:transparent;padding-bottom:0}
+ol li::before{content:counter(s);position:absolute;left:-10px;top:1px;width:19px;height:19px;
+  border-radius:6px;background:var(--bg);border:1px solid var(--accent);color:var(--accent);
+  font:600 .72rem/17px Consolas,monospace;text-align:center}
+li h3{margin:0 0 2px;font-size:1.02rem;font-weight:600;color:var(--text)}
+li p{margin:0}
+
+kbd{font-family:Consolas,"Cascadia Mono",monospace;font-size:.86em;color:var(--text);
+  background:var(--panel);border:1px solid var(--line);border-bottom-width:2px;border-radius:6px;padding:1px 7px}
+code{font-family:Consolas,monospace;font-size:.9em;color:var(--accent)}
+
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:20px}
+.box p{margin:0;color:var(--text)}
+.warn{border-color:#3a3226}
+.warn strong{color:var(--warn)}
+
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;color:var(--text)}
+details p{margin:8px 0 0}
+summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+
+figure{margin:12px 0 0}
+figure img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--panel)}
+figcaption{margin-top:6px;font-size:.85rem;color:var(--muted)}
+
+a.btn{display:inline-block;margin-top:34px;border:1px solid var(--accent);color:var(--accent);
+  text-decoration:none;border-radius:12px;padding:11px 22px;font-weight:600}
+a.btn:hover{background:var(--accent);color:var(--bg)}
+footer{margin-top:60px;font-size:.88rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1>FlyX Strats Guide</h1>
+  <p class="sub">From download to your first clean flystrat. Do the parts in order and do not skip the practice.</p>
+
+  <h2>1. Setup</h2>
+  <p>You only do the first two steps once.</p>
+  <ol>
+    <li><h3>Download the loader</h3><p>Download <code>loader.exe</code> from the link in your ticket and save it in its own folder.</p></li>
+    <li><h3>Allow the loader in your antivirus</h3><p>The loader uses KeyAuth for license checks, and some antivirus programs flag KeyAuth. Add the loader folder as an exclusion in your antivirus settings.</p></li>
+    <li><h3>Open the loader</h3><p>Start <code>loader.exe</code>.</p></li>
+    <li><h3>Enter your key</h3><p>Type or paste your license key and press <kbd>Enter</kbd>.</p></li>
+    <li><h3>Wait</h3><p>After a short moment the program opens.</p></li>
+  </ol>
+
+  <div class="box warn"><p><strong>Never share your key.</strong> Sharing your license gets you blacklisted without a warning.</p></div>
+
+  <h2>2. Program settings</h2>
+  <ol>
+    <li><h3>Import the settings</h3><p>Use the import option in the program and load the settings file you received.</p><figure><img src="import.png" alt="Import the settings in the menu" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>Import the settings in the menu</figcaption></figure></li>
+    <li><h3>Set your keybind</h3><p>Pick the key you want to use. In this guide it is called your keybind.</p><figure><img src="keybind.png" alt="Set your keybind" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>Set your keybind</figcaption></figure></li>
+    <li><h3>Choose your connection</h3><p>Select <strong>Wi-Fi</strong> or <strong>Ethernet</strong>, depending on what your PC uses.</p><figure><img src="connection.png" alt="Choose Wi-Fi or Ethernet" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>Choose Wi-Fi or Ethernet</figcaption></figure></li>
+    <li><h3>Minimize the program</h3><p>Do not close it. Minimize it and start the game.</p></li>
+  </ol>
+
+  <h2>3. Practice</h2>
+  <p>Learn it in two exercises. Move on only when you can do the current one reliably.</p>
+
+  <h3 style="margin:28px 0 0;font-size:1.15rem">Exercise 1: the basics</h3>
+  <ol>
+    <li><h3>Build up a little</h3><p>Build a short tower, just high enough to jump off and fall for a moment.</p></li>
+    <li><h3>Jump and press the keybind</h3><p>Jump off, then press <kbd>Alt</kbd> + your keybind.</p></li>
+    <li><h3>Climb while falling</h3><p>While flying down, climb the build.</p></li>
+    <li><h3>Press the keybind again</h3><p>When you push yourself off the build while climbing, press your keybind once more. Repeat until it feels consistent.</p></li>
+  </ol>
+
+  <h3 style="margin:36px 0 0;font-size:1.15rem">Exercise 2: full height</h3>
+  <ol>
+    <li><h3>Build to maximum height</h3><p>Build up as high as the map allows. Make sure there is no building below you.</p></li>
+    <li><h3>Do the same routine</h3><p>Repeat the movement from Exercise 1, with one change.</p></li>
+    <li><h3>Spam F11 instead</h3><p>When you push yourself up, do not press <kbd>Alt</kbd> + keybind. Spam <kbd>F11</kbd> quickly so the game freezes.</p></li>
+    <li><h3>Wait for the window to settle</h3><p>The game switches between windowed and windowed fullscreen, growing and shrinking. Wait until it stops.</p></li>
+    <li><h3>Press your keybind</h3><p>As soon as the window stops changing size, press your keybind.</p></li>
+  </ol>
+
+  <h2>Troubleshooting</h2>
+  <details><summary>The loader gets deleted or will not open</summary><p>Check that the loader folder is in your antivirus exclusions, then download the loader again.</p></details>
+  <details><summary>My key is not accepted</summary><p>Copy it again and check for extra spaces at the start or end.</p></details>
+  <details><summary>It does not work in game</summary><p>Make sure the program is still running in the background and your connection type is set correctly.</p></details>
+  <details><summary>Still stuck?</summary><p>Open a ticket in our Discord and describe what happens.</p></details>
+
+  <a class="btn" href="https://discord.gg/haWEMb3zgV">Join our Discord</a>
+  <footer>FlyX Strats. All sales are final. Do not share your key.</footer>
+</main>
+</body>
+</html>
